@@ -25,21 +25,11 @@ dependencies {
     // This dependency is used by the application.
     implementation libs.guava
 
-    // jsoup HTML parser library @ https://jsoup.org/
-    implementation 'org.jsoup:jsoup:1.18.3'
+    // For making HTTP requests
+    implementation 'org.codehaus.groovy.modules.http-builder:http-builder:0.7.1'
 
-    // DataFrames
-    implementation platform('org.dflib:dflib-bom:1.2.0')
-    implementation 'org.dflib:dflib'
-    implementation 'org.dflib:dflib-csv'
-    
-    // Progressbar
-    implementation   'me.tongfei:progressbar:0.10.0'
-
-    // Selenium web scraping
-    implementation 'org.seleniumhq.selenium:selenium-java:4.29.0'
-    implementation 'org.junit.jupiter:junit-jupiter-engine:5.11.4'
-
+    // For parsing CSV files
+    implementation 'org.apache.commons:commons-csv:1.9.0'
 
     // Use the awesome Spock testing and specification framework even with Java
     testImplementation libs.spock.core
@@ -57,7 +47,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = 'org.CarbonIntensityTable.ScrapeYearlyCI'
+    mainClass = 'org.example.GetCIvalue'
 }
 
 tasks.named('test') {

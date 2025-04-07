@@ -2,7 +2,7 @@
 // It may serve as a reference or be reactivated if similar functionality is needed again.
 
 
-package org.CarbonIntensityTable
+package org.CarbonIntensity
 import org.jsoup.select.Elements
 import org.jsoup.nodes.Element
 import org.openqa.selenium.By
@@ -140,9 +140,9 @@ class ScrapeYearlyCI {
 
 
 
-    static void main(String[] args) {
+    /*static void main(String[] args) {
         String url = "https://portal.electricitymaps.com/datasets"
         ScrapeYearlyCI scraperInstance = new ScrapeYearlyCI()
         scraperInstance.scrape(url)
-    }
+    }*/
 }
