@@ -350,3 +350,4 @@ Datetime (UTC),Country,Zone name,Zone id,Carbon intensity gCO₂eq/kWh (direct),
 2024-01-01 00:00:00,Ecuador,Ecuador,EC,95.84,170.91,76.12,76.12,Electricity Maps Estimation
 2024-01-01 00:00:00,Malta,Malta,MT,323.54,425.22,22.61,22.59,Electricity Maps Estimation
 2024-01-01 00:00:00,Australia,Northern Territory,AU-NT,373.8,494.57,0.57,0.57,Electricity Maps Estimation; ntesmo.com.au
+2023-01-01 00:00:00,Global,Global,GLOBAL,480.0,480.0,,,https://ember-energy.org/latest-insights/global-electricity-review-2024/global-electricity-trends/?utm_source=chatgpt.com#global-power-sector-emissions

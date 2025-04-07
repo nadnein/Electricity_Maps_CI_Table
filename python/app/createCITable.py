@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+from datetime import datetime
 
 def process_csv_files(resources_folder, output_file=None):
     """
@@ -81,15 +82,42 @@ def find_missing_country_codes(df, collected_country_codes):
 
     return missing_countries
 
+def add_global_average_row(ci_table, datetime_utc, source, carbon_intensity=480, output_file=None):
+    """
+    Adds a row for the global average to the CI table.
+    """
+    global_average_row = pd.DataFrame([{
+        "Datetime (UTC)": datetime_utc,
+        "Country": "Global",
+        "Zone name": "Global",
+        "Zone id": "GLOBAL",
+        "Carbon intensity gCO₂eq/kWh (direct)": carbon_intensity,
+        "Carbon intensity gCO₂eq/kWh (Life cycle)": carbon_intensity,
+        "Carbon-free energy percentage (CFE%)": "",
+        "Renewable energy percentage (RE%)": "",
+        "Data source": source
+    }])
+
+    # Add the global average row to the table
+    ci_table = pd.concat([ci_table, global_average_row], ignore_index=True)
+
+    if output_file:
+        ci_table.to_csv(output_file, index=False)
+
+    print(f"Global average row added and saved to {output_file}")
+
 
 def main():
-    # Define the resources folder and output file
+    ### Define the resources folder and output file ###
+
     resources_folder = "resources"
     output_folder = "output_files"
     output_file = os.path.join(output_folder, "fallbackCIDataTable.csv")
 
     # Ensure the output folder exists
     os.makedirs(output_folder, exist_ok=True)
+
+    ### Generate CI table ###
 
     # Process the CSV files
     ci_table_df = process_csv_files(os.path.join(resources_folder, 'yearlyCIData'), output_file)
@@ -104,17 +132,18 @@ def main():
     print("-" * 40)
     print(f"Total number of rows: {len(ci_table_df)}")
 
+
+    ### Find missing country codes ###
+
     # Get the 2-letter country codes
     country_codes = get_2_letter_country_codes(ci_table_df)
 
-    # Find missing country codes 
+    # Country codes comparison table
     country_codes_df = pd.read_csv(os.path.join(resources_folder, "countryCodes.csv"), 
                                 keep_default_na=False)  # Ensure "NA" is not treated as a missing value)
 
-    # Find missing country codes and their corresponding country names
     missing_countries = find_missing_country_codes(country_codes_df, country_codes)
 
-    # Print the missing country codes and names in the same format
     print("\nMissing Country Codes and Names:")
     print("-" * 40)
     if missing_countries:
@@ -122,12 +151,18 @@ def main():
         print("-" * 40)
         for code, name in sorted(missing_countries.items()):  # Sort for consistent order
             print(f"{code:15} | {name}")
-        # Print the total number of missing countries
         print("-" * 40)
         print(f"Total number of missing countries: {len(missing_countries)}")
     else:
         print("No missing country codes found!")
-        
+
+
+    ### Add global average row ###
+
+    date = datetime(2023, 1, 1, 0, 0, 0).strftime("%Y-%m-%d %H:%M:%S")
+    source = "https://ember-energy.org/latest-insights/global-electricity-review-2024/global-electricity-trends/?utm_source=chatgpt.com#global-power-sector-emissions"
+    carbon_intensity = 480
+    add_global_average_row(ci_table_df, date, source, carbon_intensity, output_file)        
     
-    if __name__ == "__main__":
-        main()
+    #if __name__ == "__main__":
+main()
