@@ -1,0 +1,2 @@
+Datetime (UTC),Country,Zone name,Zone id,Carbon intensity gCO₂eq/kWh (direct),Carbon intensity gCO₂eq/kWh (Life cycle),Carbon-free energy percentage (CFE%),Renewable energy percentage (RE%),Data source
+2024-01-01 00:00:00,Peru,Peru,PE,127.72,186.17,65.49,65.49,Electricity Maps Estimation; coes.org.pe,,

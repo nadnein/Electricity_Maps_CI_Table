@@ -1,0 +1,2 @@
+Datetime (UTC),Country,Zone name,Zone id,Carbon intensity gCO₂eq/kWh (direct),Carbon intensity gCO₂eq/kWh (Life cycle),Carbon-free energy percentage (CFE%),Renewable energy percentage (RE%),Data source
+2024-01-01 00:00:00,Angola,Angola,AO,106.17,176.83,72.88,72.88,Electricity Maps Estimation,,

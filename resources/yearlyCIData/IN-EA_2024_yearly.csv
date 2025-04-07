@@ -1,0 +1,2 @@
+Datetime (UTC),Country,Zone name,Zone id,Carbon intensity gCO₂eq/kWh (direct),Carbon intensity gCO₂eq/kWh (Life cycle),Carbon-free energy percentage (CFE%),Renewable energy percentage (RE%),Data source
+2024-01-01 00:00:00,India,Eastern India,IN-EA,710.86,768.96,6.29,5.90,Electricity Maps Estimation,,

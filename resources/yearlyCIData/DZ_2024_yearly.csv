@@ -1,0 +1,2 @@
+Datetime (UTC),Country,Zone name,Zone id,Carbon intensity gCO₂eq/kWh (direct),Carbon intensity gCO₂eq/kWh (Life cycle),Carbon-free energy percentage (CFE%),Renewable energy percentage (RE%),Data source
+2024-01-01 00:00:00,Algeria,Algeria,DZ,367.45,487.33,0.72,0.72,Electricity Maps Estimation,,

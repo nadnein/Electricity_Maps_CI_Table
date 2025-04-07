@@ -1,0 +1,2 @@
+Datetime (UTC),Country,Zone name,Zone id,Carbon intensity gCO₂eq/kWh (direct),Carbon intensity gCO₂eq/kWh (Life cycle),Carbon-free energy percentage (CFE%),Renewable energy percentage (RE%),Data source
+2024-01-01 00:00:00,South Africa,South Africa,ZA,655.89,712.78,15.15,11.40,Electricity Maps Estimation; eskom.co.za,,

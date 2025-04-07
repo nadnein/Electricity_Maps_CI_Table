@@ -1,0 +1,2 @@
+Datetime (UTC),Country,Zone name,Zone id,Carbon intensity gCO₂eq/kWh (direct),Carbon intensity gCO₂eq/kWh (Life cycle),Carbon-free energy percentage (CFE%),Renewable energy percentage (RE%),Data source
+2024-01-01 00:00:00,Saint Pierre and Miquelon,Saint Pierre and Miquelon,PM,575.00,700.00,0.00,0.00,Electricity Maps Estimation; EMBER + Electricity Maps Estimation,,

@@ -1,3 +1,5 @@
+# For groovy:
+
 .gradle
 **/build/
 !src/**/build/
@@ -19,3 +21,41 @@ gradle-app.setting
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
+
+# Ignore Gradle build output directory
+build
+
+# for python:
+
+# Virtual environment
+venv/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE-specific files
+.idea/
+.vscode/
+*.iml
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Test coverage reports
+htmlcov/
+.coverage
+*.cover
+
+# pytest cache
+.cache/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Build artifacts
+build/
+dist/
+*.egg-info/

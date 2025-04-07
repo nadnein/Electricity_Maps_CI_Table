@@ -1,0 +1,2 @@
+Datetime (UTC),Country,Zone name,Zone id,Carbon intensity gCO₂eq/kWh (direct),Carbon intensity gCO₂eq/kWh (Life cycle),Carbon-free energy percentage (CFE%),Renewable energy percentage (RE%),Data source
+2024-01-01 00:00:00,USA,Associated Electric Cooperative,US-MIDW-AECI,553.28,616.01,20.67,19.86,Electricity Maps Estimation; eia.gov,,

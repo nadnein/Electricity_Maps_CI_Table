@@ -1,0 +1,2 @@
+Datetime (UTC),Country,Zone name,Zone id,Carbon intensity gCO₂eq/kWh (direct),Carbon intensity gCO₂eq/kWh (Life cycle),Carbon-free energy percentage (CFE%),Renewable energy percentage (RE%),Data source
+2024-01-01 00:00:00,Australia,Rottnest Island,AU-WA-RI,322.06,519.94,20.67,20.67,hydro.com.au; https://www.hydro.com.au/clean-energy/hybrid-energy-solutions/success-stories/rottnest-island; Electricity Maps Estimation,,

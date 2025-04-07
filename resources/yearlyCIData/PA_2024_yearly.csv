@@ -1,0 +1,2 @@
+Datetime (UTC),Country,Zone name,Zone id,Carbon intensity gCO₂eq/kWh (direct),Carbon intensity gCO₂eq/kWh (Life cycle),Carbon-free energy percentage (CFE%),Renewable energy percentage (RE%),Data source
+2024-01-01 00:00:00,Panama,Panama,PA,103.03,166.93,73.13,73.13,sitr.cnd.com.pa; Electricity Maps Estimation; https://www.cnd.com.pa/,,

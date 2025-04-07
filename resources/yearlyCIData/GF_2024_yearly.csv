@@ -1,0 +1,2 @@
+Datetime (UTC),Country,Zone name,Zone id,Carbon intensity gCO₂eq/kWh (direct),Carbon intensity gCO₂eq/kWh (Life cycle),Carbon-free energy percentage (CFE%),Renewable energy percentage (RE%),Data source
+2024-01-01 00:00:00,French Guiana,French Guiana,GF,241.45,408.79,40.53,40.53,opendata-guyane.edf.fr; Electricity Maps Estimation,,

@@ -1,0 +1,2 @@
+Datetime (UTC),Country,Zone name,Zone id,Carbon intensity gCO₂eq/kWh (direct),Carbon intensity gCO₂eq/kWh (Life cycle),Carbon-free energy percentage (CFE%),Renewable energy percentage (RE%),Data source
+2024-01-01 00:00:00,South Georgia and the South Sandwich Islands,South Georgia and the South Sandwich Islands,GS,0.00,23.83,100.00,100.00,Electricity Maps Estimation; IRENA + Electricity Maps Estimation,,

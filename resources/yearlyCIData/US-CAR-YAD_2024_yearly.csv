@@ -1,0 +1,2 @@
+Datetime (UTC),Country,Zone name,Zone id,Carbon intensity gCO₂eq/kWh (direct),Carbon intensity gCO₂eq/kWh (Life cycle),Carbon-free energy percentage (CFE%),Renewable energy percentage (RE%),Data source
+2024-01-01 00:00:00,USA,"Alcoa Power Generating, Inc. Yadkin Division",US-CAR-YAD,25.16,52.58,95.69,90.64,Electricity Maps Estimation; eia.gov,,

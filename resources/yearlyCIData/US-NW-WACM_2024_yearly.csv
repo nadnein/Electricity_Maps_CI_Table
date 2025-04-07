@@ -1,0 +1,2 @@
+Datetime (UTC),Country,Zone name,Zone id,Carbon intensity gCO₂eq/kWh (direct),Carbon intensity gCO₂eq/kWh (Life cycle),Carbon-free energy percentage (CFE%),Renewable energy percentage (RE%),Data source
+2024-01-01 00:00:00,USA,Western Area Power Administration - Rocky Mountain Region,US-NW-WACM,612.18,640.93,37.77,37.47,eia.gov; Electricity Maps Estimation,,
