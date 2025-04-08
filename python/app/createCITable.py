@@ -30,6 +30,14 @@ def process_csv_files(resources_folder, output_file=None):
                     skip_blank_lines=True,
                     keep_default_na=False  # Ensure "NA" is not treated as a missing value
                 )
+            
+            country = df["Country"].iloc[0]
+            date = df["Datetime (UTC)"].iloc[0]
+            date = datetime.strptime(date, "%Y-%m-%d %H:%M:%S")
+            year = date.year
+
+            # Add citation
+            df["Citation"] = f'Electricity Maps (2025). {country} {year} Yearly Carbon Intensity Data (Version January 27, 2025). Electricity Maps. https://www.electricitymaps.com'
 
             row_count = len(df)
             if row_count != 1:  # Check if there is only one row

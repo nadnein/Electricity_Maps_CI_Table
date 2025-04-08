@@ -1,6 +1,6 @@
 # Electricity Maps CI Table
 
-Generates a CSV file containing yearly average carbon intensity (CI) values for various locations using data from Electricity Maps. Currently, the data is based on values from 2024.
+Generates a CSV file containing yearly average carbon intensity (CI) values for various locations using data from [Electricity Maps](https://app.electricitymaps.com). Currently, the data is based on values from 2024.
 
 ---
 
@@ -74,7 +74,6 @@ To determine the carbon intensity for a specific location, use Gradle to execute
 ```
 Ensure that the `build.gradle` file is properly configured to include the `GetCIvalue` class as the main class for execution.
 
-
 The script will fetch real-time carbon intensity data from the Electricity Maps API. 
 If the API fails, it will fall back to the `fallbackCIDataTable.csv` file in the `output_files` directory.
 
@@ -103,3 +102,32 @@ To run the Groovy tests, use the following command:
 ```bash
 ./gradlew test
 ```
+
+---
+
+## Selecting Your Zone Code
+
+To use the Electricity Maps API, you need a **zone code** for your location. You can find the zone code for your region by visiting the [Electricity Maps Zones Overview](https://portal.electricitymaps.com/docs/getting-started#zonesoverview).
+
+---
+
+## Data Attribution
+
+This project uses data from **Electricity Maps** under the Open Database License (ODbL). 
+
+### License Terms:
+- **Share**: You are free to copy, distribute, and use the data.
+- **Adapt**: You can modify, transform, and build upon the data.
+- **Create**: You can produce works from the data.
+
+### Conditions:
+- **Attribute**: You must clearly credit the source of the data and include the license for any public use or redistribution.
+- **Share-Alike**: Any adapted versions of the data must be offered under the same ODbL license.
+- **Keep Open**: If you use technological restrictions (e.g., DRM), you must also provide an unrestricted version.
+
+---
+
+## Disclaimer
+
+This project is not affiliated with or endorsed by **Electricity Maps**.  
+The data is used under the terms of the Open Database License (ODbL).
