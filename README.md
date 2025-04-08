@@ -45,7 +45,7 @@ The output will be saved in the `output_files/` directory as `fallbackCIDataTabl
 
 ## Running the Groovy Code
 
-### 1. Prerequisites
+### 1. Prerequisites 
 Ensure you have Java, Groovy, and Gradle installed on your system. You can check their versions using:
 ```bash
 java -version

@@ -22,5 +22,6 @@ class HelperFunctions {
 
     // Format the timestamp
     return localTime.format(formatter)
+
 }
 }
